@@ -4,7 +4,7 @@ import Widget from '../src/components/Widget'
 import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
- import GitHubCorner from '../src/components/GitHubCorner'
+import GitHubCorner from '../src/components/GitHubCorner'
 
 
 
@@ -16,11 +16,13 @@ export const QuizContainer = styled.div`
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;
+    
   }
 `;
 
 export default function Home() {
   return (
+   
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
@@ -36,7 +38,6 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-
             <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
