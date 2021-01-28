@@ -13,18 +13,26 @@ const QuizBackground = styled.div`
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH"; */
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 880px) {
     background-image: none;
-    &:after {
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color:#f62d13;
+    background-image:
+        /* linear-gradient(transparent, ${({ theme }) => theme.colors.mainBg}), */
+        url('/images/bg3.jpg');
+    /* &:after {
       content: "";
       background-size: cover;
-      background-position: center;
+      background-position: bottom center;
+      background-color:#f62d13;
       background-image:
         linear-gradient(transparent, ${({ theme }) => theme.colors.mainBg}),
-        url(${({ backgroundImage }) => backgroundImage});
+        url('/images/bg2.jpg');
       display: block;
       width: 100%;
-      height: 210px;
+    
       position: absolute;
       top: 0;
       left: 0;
@@ -35,12 +43,12 @@ const QuizBackground = styled.div`
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     filter: FlipH;
-    -ms-filter: "FlipH"; */
+    -ms-filter: "FlipH"; 
     }
     *:first-child {
       position: relative;
       z-index: 10;
-    }
+    } */
   }
 `;
 
