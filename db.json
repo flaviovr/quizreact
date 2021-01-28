@@ -1,7 +1,7 @@
 {
     "bg": "/images/bg.jpg",
-    "title": "Quiz American Horror Story da Alura",
-    "description": "Teste os seus conhecimentos sobre AHS e vamos ver quantos pontos vocë marca.",
+    "title": "Quiz American Horror Story!",
+    "description": "Teste os seus conhecimentos sobre AHS e vamos ver quantos pontos marca.",
     "questions": [
       {
         "image": "/images/q1.jpg",
