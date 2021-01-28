@@ -7,6 +7,12 @@ const QuizBackground = styled.div`
   background-image: url(${({ backgroundImage }) => backgroundImage});
   background-color: ${({ theme }) => theme.colors.mainBg};
   flex: 1;
+   /* -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; */
   @media screen and (max-width: 500px) {
     background-image: none;
     &:after {
@@ -24,6 +30,12 @@ const QuizBackground = styled.div`
       left: 0;
       right: 0;
       z-index: 1;
+      /* -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; */
     }
     *:first-child {
       position: relative;
