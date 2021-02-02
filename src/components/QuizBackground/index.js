@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const QuizBackground = styled.div`
   width: 100%;
-  background-size: cover;
+  background-repeat:no-repeat;
+  background-size: contain;
   background-position: right;
   background-image: url(${({ backgroundImage }) => backgroundImage});
   background-color: ${({ theme }) => theme.colors.mainBg};
@@ -18,7 +19,7 @@ const QuizBackground = styled.div`
     background-repeat:no-repeat;
     background-size: contain;
     background-position: bottom;
-    background-color:#f62d13;
+    background-color:${({ theme }) => theme.colors.mainBg};
     background-image:
         /* linear-gradient(transparent, ${({ theme }) => theme.colors.mainBg}), */
         url('/images/bg3.jpg');
@@ -26,7 +27,7 @@ const QuizBackground = styled.div`
       content: "";
       background-size: cover;
       background-position: bottom center;
-      background-color:#f62d13;
+      background-color:${({ theme }) => theme.colors.mainBg};
       background-image:
         linear-gradient(transparent, ${({ theme }) => theme.colors.mainBg}),
         url('/images/bg2.jpg');
